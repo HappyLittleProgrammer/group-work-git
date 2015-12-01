@@ -1,0 +1,110 @@
+* {
+  border-radius: 0 !important;
+}
+
+body { 
+background: url(background.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.jumbotron{
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px; 
+    border-style:solid;
+    border-color: #7ddbf6;
+}
+ 
+.navbar-default{
+	border-color:#7ddbf6;
+	background-color: #7ddbf6;
+	background-image: none;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	background-color: #7ddbf6;
+	margin: 0px;
+	border:0px;
+	border-color:#FF0000;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a{
+	text-shadow: none;
+	color: #ffffff;
+	background-color:#7ddbf6;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+	background-color: #7ddbf6;
+	color:#ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: #7ddbf6;
+	color:#ffffff;	
+}
+
+.icon-bar{
+    background-color: #ffffff!important;
+    color:#ffffff;	
+}
+.navbar-header{
+	background-color: #7ddbf6;
+	color:#ffffff;	
+}
+
+
+.navbar-default .navbar-toggle{
+	border:0px;
+	background-color:#7ddbf6;
+	color:#ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+      color: #7ddbf6;
+      background: #ffffff;
+      text-decoration: none;
+      text-shadow:none;
+      -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  font-weight: bold;
+
+ }
+ 
+ .panel-default{
+     border-radius: 0px;
+     border-color: #7ddbf6;
+ }
+ 
+  .panel-default > .panel-heading{
+    background-color: #7ddbf6;
+    color:#ffffff;
+    background-image: none;
+    border-radius: 0px;
+    
+}
+
+.btn-primary {
+   background-color: #7ddbf6;
+   color:#ffffff;
+   background-image: none;
+   border-color: #7ddbf6;
+   border-radius: 0px;
+}
+
+.btn-primary:hover{
+    border-color: #7ddbf6;
+    background-color: #ffffff;
+    color:#7ddbf6;
+    background-image: none;
+    border-radius: 0px;
+}
+
+
