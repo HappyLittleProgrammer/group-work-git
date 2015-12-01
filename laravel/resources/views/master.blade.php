@@ -39,7 +39,9 @@
               <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="/">Home</a></li>
 
               <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="/about">About</a></li>
-
+              
+              <li class="{{ Request::is('tasks') ? 'active' : '' }}"><a href="/tasks">Tasks</a></li>
+              
               @if (Auth::user())
                   <p class="navbar-text nt-color"> Welcome {{ Auth::user()->fname }} {{ Auth::user()->lname }}!<p>
               @endif
