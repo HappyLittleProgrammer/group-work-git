@@ -32,7 +32,12 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">Group™</a>
+          @if (Auth::user())
+                  <p class="navbar-text nt-color"> Welcome {{ Auth::user()->fname }}!<p>
+              @endif
         </div>
+          
+
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 
@@ -42,10 +47,7 @@
               
               <li class="{{ Request::is('tasks') ? 'active' : '' }}"><a href="/tasks">Tasks</a></li>
               
-              @if (Auth::user())
-                  <p class="navbar-text nt-color"> Welcome {{ Auth::user()->fname }} {{ Auth::user()->lname }}!<p>
-              @endif
-
+              
           </ul>
 
             @if(!Auth::user())
