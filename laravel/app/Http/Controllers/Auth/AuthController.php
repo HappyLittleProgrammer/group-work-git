@@ -22,7 +22,7 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
-    private $redirectTo = '/';
+    private $redirectTo = '/tasks';
     /**
      * Create a new authentication controller instance.
      *
@@ -57,7 +57,7 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        $this->redirectTo = '/';
+        $this->redirectTo = '/tasks';
         
         return User::create([
             'fname' => $data['fname'],

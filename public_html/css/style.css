@@ -17,6 +17,10 @@ background-size: cover;
     border-style:solid;
     border-color: #7ddbf6;
 }
+.navbar-default .navbar-text{
+    color: #ffffff;
+    font-weight: bold;
+}
  
 .navbar-default{
 	border-color:#7ddbf6;
@@ -29,7 +33,7 @@ background-size: cover;
 	background-color: #7ddbf6;
 	margin: 0px;
 	border:0px;
-	border-color:#FF0000;
+	border-color:#7ddbf6;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a{

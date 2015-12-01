@@ -1,5 +1,5 @@
 <?php
-
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('other.mainhome');
+    $users=User::with('tasks')->get();
+    return view("tasks.tasksshow")->with(array("users" => $users));
 });
 
 Route::get('/about', function () {
@@ -32,3 +33,7 @@ Route::post('/register', 'Auth\AuthController@postRegister');
 Route::controllers([
    'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/tasks', 'TaskController@index');
+Route::post('/task', 'TaskController@store');
+Route::delete('/task/{task}', 'TaskController@destroy');
